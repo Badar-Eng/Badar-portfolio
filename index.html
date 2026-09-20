@@ -6,47 +6,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badar ul Zaman | Frontend Web Developer – HTML, CSS, JS</title>
-<meta name="description" content="Frontend web developer building fast, responsive websites with HTML, CSS & JavaScript. View live projects and hire Badar ul Zaman for freelance work.">
-<meta name="keywords" content="Badar ul Zaman, frontend developer, web developer portfolio, HTML CSS JavaScript developer, responsive web design, freelance web developer, UI developer, frontend developer Pakistan">
-<meta name="author" content="Badar ul Zaman">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#3454D1">
-<link rel="canonical" href="https://badarulzaman.com/">
+  <meta name="description"
+    content="Frontend web developer building fast, responsive websites with HTML, CSS & JavaScript. View live projects and hire Badar ul Zaman for freelance work.">
+  <meta name="keywords"
+    content="Badar ul Zaman, frontend developer, web developer portfolio, HTML CSS JavaScript developer, responsive web design, freelance web developer, UI developer, frontend developer Pakistan">
+  <meta name="author" content="Badar ul Zaman">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#3454D1">
+  <link rel="canonical" href="https://badarulzaman.com/">
 
-<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Badar ul Zaman">
-<meta property="og:title" content="Badar ul Zaman | Frontend Web Developer">
-<meta property="og:description" content="I build clean, fast, responsive websites with HTML, CSS & JavaScript. Explore my live projects.">
-<meta property="og:url" content="https://badarulzaman.com/">
-<meta property="og:image" content="https://badarulzaman.com/images/badar.jpg">
-<meta property="og:image:alt" content="Badar ul Zaman — Frontend Web Developer">
-<meta property="og:locale" content="en_US">
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Badar ul Zaman">
+  <meta property="og:title" content="Badar ul Zaman | Frontend Web Developer">
+  <meta property="og:description"
+    content="I build clean, fast, responsive websites with HTML, CSS & JavaScript. Explore my live projects.">
+  <meta property="og:url" content="https://badarulzaman.com/">
+  <meta property="og:image" content="https://badarulzaman.com/images/badar.jpg">
+  <meta property="og:image:alt" content="Badar ul Zaman — Frontend Web Developer">
+  <meta property="og:locale" content="en_US">
 
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Badar ul Zaman | Frontend Web Developer">
-<meta name="twitter:description" content="I build clean, fast, responsive websites with HTML, CSS & JavaScript.">
-<meta name="twitter:image" content="https://badarulzaman.com/images/badar.jpg">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Badar ul Zaman | Frontend Web Developer">
+  <meta name="twitter:description" content="I build clean, fast, responsive websites with HTML, CSS & JavaScript.">
+  <meta name="twitter:image" content="https://badarulzaman.com/images/badar.jpg">
 
-<!-- Icons -->
-<link rel="icon" href="images/logo.png" type="image/png">
-<link rel="apple-touch-icon" href="images/logo.png">
+  <!-- Icons -->
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo.png">
 
-<!-- Structured data (helps Google understand who you are) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Badar ul Zaman",
-  "jobTitle": "Frontend Web Developer",
-  "url": "https://badarulzaman.com/",
-  "image": "https://badarulzaman.com/images/badar.jpg",
-  "email": "mailto:badarulzaman1000@gmail.com",
-  "sameAs": ["https://github.com/Badar-Eng"],
-  "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Responsive Web Design", "UI/UX Design", "Git"]
-}
-</script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Structured data (helps Google understand who you are) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Badar ul Zaman",
+    "jobTitle": "Frontend Web Developer",
+    "url": "https://badarulzaman.com/",
+    "image": "https://badarulzaman.com/images/badar.jpg",
+    "email": "mailto:badarulzaman1000@gmail.com",
+    "sameAs": ["https://github.com/Badar-Eng"],
+    "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Responsive Web Design", "UI/UX Design", "Git"]
+  }
+  </script>
   <style>
     :root {
       --bg: #F7F8FA;
@@ -182,21 +192,73 @@
       font-size: 16px;
     }
 
-    /* Reveal animation only hides content once JS confirms it's ready to animate it back in — so a JS error never leaves sections blank */
+    /* ---------- Scroll reveal ----------
+       Content only hides once JS confirms it's ready to animate it back in,
+       so a JS error never leaves sections blank.
+       Uses `translate` / `scale` (not `transform`) so it never clashes with the 3D tilt. */
     .reveal {
       opacity: 1;
-      transform: none;
-      transition: opacity .7s ease, transform .7s ease;
+      translate: 0 0;
+      transition: opacity .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s),
+        translate .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s);
     }
 
     .js-ready .reveal {
       opacity: 0;
-      transform: translateY(24px);
+      translate: 0 40px;
     }
 
     .js-ready .reveal.in {
       opacity: 1;
-      transform: translateY(0);
+      translate: 0 0;
+    }
+
+    /* Cards also scale up slightly as they arrive */
+    .js-ready .skill-card.reveal,
+    .js-ready .project-card.reveal {
+      scale: .95;
+    }
+
+    .js-ready .skill-card.reveal.in,
+    .js-ready .project-card.reveal.in {
+      scale: 1;
+    }
+
+    /* Stagger: boxes in the same row arrive one after another */
+    .skills-grid .reveal:nth-child(3n + 2) {
+      --d: .12s;
+    }
+
+    .skills-grid .reveal:nth-child(3n) {
+      --d: .24s;
+    }
+
+    .projects-grid .reveal:nth-child(even) {
+      --d: .14s;
+    }
+
+    @media (max-width: 860px) {
+      .projects-grid .reveal:nth-child(even) {
+        --d: 0s;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .skills-grid .reveal:nth-child(3n + 2),
+      .skills-grid .reveal:nth-child(3n) {
+        --d: 0s;
+      }
+
+      .skills-grid .reveal:nth-child(even) {
+        --d: .12s;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills-grid .reveal:nth-child(even) {
+        --d: 0s;
+      }
     }
 
     /* ---------- Nav ---------- */
@@ -940,7 +1002,10 @@
       border-radius: 16px;
       padding: 26px 22px;
       transform-style: preserve-3d;
-      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease,
+        opacity .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s),
+        translate .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s),
+        scale .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s);
       will-change: transform;
     }
 
@@ -993,7 +1058,10 @@
       padding: 30px;
       overflow: hidden;
       transform-style: preserve-3d;
-      transition: transform .2s ease-out, box-shadow .3s ease;
+      transition: transform .2s ease-out, box-shadow .3s ease,
+        opacity .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s),
+        translate .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s),
+        scale .9s cubic-bezier(.22, .61, .36, 1) var(--d, 0s);
       will-change: transform;
     }
 
@@ -1515,7 +1583,7 @@
               </svg></span>
             badarulzaman1000@gmail.com
           </a>
-          <a href="tel:+923014207500">
+          <a href="tel:+923220636517">
             <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white"
                 stroke-width="2">
                 <path
